@@ -1,5 +1,6 @@
 import React from 'react';
 import BannerBg from '../../image/banner.webp'
+import Footer from '../Footer/Footer';
 import Services from '../Services/Services';
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
                 </div>
             </div>
             <Services></Services>
+            <Footer></Footer>
         </div>
     );
 };
