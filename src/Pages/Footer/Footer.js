@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='mt-5' style={{background:'#2E4053',height:'250px'}}>
+        <div className='mt-5 h-100' style={{background:'#2E4053',height:''}}>
 
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-4 g-4 ">
@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
                 <div className='text-white text-center'>
                 <hr />
-                <p>copyRight@personaltutor2022</p>
+                <p className='pb-3'>copyRight@personaltutor2022</p>
                 </div>
             </div>
 

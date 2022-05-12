@@ -4,7 +4,7 @@ import app from "../firebase.init";
 
 
 
-;
+
 const googleProvider = new GoogleAuthProvider();
 
 
