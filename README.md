@@ -1,8 +1,8 @@
 ### Project Name: Personal Tutor.
 
-### code link: 
+### code link: https://github.com/programming-hero-web-course-4/independent-service-provider-showmittro
 
-### live site link:
+### live site link:  https://personal-tutor.netlify.app/
 
 
 
