@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider,signOut,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile,sendPasswordResetEmail, sendEmailVerification } from "firebase/auth";
 import app from "../firebase.init";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
 
 
@@ -9,12 +10,14 @@ const googleProvider = new GoogleAuthProvider();
 
 
  const useFirebase = () => {
+
  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [user,setUser] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
   
 
     const auth = getAuth(app);

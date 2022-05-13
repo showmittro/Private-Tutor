@@ -9,7 +9,7 @@ const Header = () => {
         <>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">Personal Tutor</a>
+    <a class="navbar-brand">Personal Tutor</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,18 +18,18 @@ const Header = () => {
         <li class="nav-item">
         <Link to="/" className='text-decoration-none fw-bold' ><a style={{color:'#990000'}} className="nav-link">Home</a></Link> 
         </li>
-        <li class="nav-item">
-        <Link className='text-decoration-none fw-bold' to="/login"> <a style={{color:'#990000'}} className="nav-link" href="#">LogIn</a></Link> 
-        </li>
         <li className="nav-item">
-        <Link className='text-decoration-none fw-bold' to="/blogs"> <a style={{color:'#990000'}} className="nav-link" href="#">Blogs</a> </Link>
+        <Link className='text-decoration-none fw-bold' to="/blog"> <a style={{color:'#990000'}} className="nav-link" href="#">Blogs</a> </Link>
         </li>
         <li className="nav-item">
         <Link className='text-decoration-none fw-bold' to="/about"><a style={{color:'#990000'}} className="nav-link" href="#">About</a></Link>
         </li>
+        <li class="nav-item">
+        <Link to="/login" className='text-decoration-none fw-bold' ><a style={{color:'#990000'}} className="nav-link">Login</a></Link> 
+        </li>
         {
 
-user.uid?
+user?.email?
 <div className="mx-2" >
   {user.displayName}
   <img src={user.photoUrl} alt="" />
